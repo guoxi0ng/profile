@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://phongreviews.com/wp-content/uploads/2022/11/avatar-facebook-mac-dinh-19.jpg" type="image/x-icon">
+    <title>CocHyHung</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/mdb.min.css">
+    <link rel="stylesheet" href="assets/theme.css">
+    <link rel="stylesheet" href="assets/user.css">   
+    <link rel="stylesheet" href="assets/giaodien.css">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calistoga|Rowdies">
+    <style>
+        #wrapper {
+            height:auto;
+            width: 100%;
+        }
+        #scroller {
+            
+            transform: translate3d(0px, -1300px, 0px);
+            transition-duration: 500ms;
+        }
+        #footer {
+            width: 100%;
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            background-color: #293f54;
+        }
+        .mam {
+            margin-top: 0px;
+        }
+        .md-tabs .nav-link {
+            color: #464646e0;
+            border: 0;
+            border: 1;
+            padding: 18px;
+            margin-right: 0px;
+            -webkit-transition: none;
+            transition: none;
+        }
+        .md-tabs .nav-link.active {
+            display: block!important;
+        }
+        .md-tabs .nav-link.active, .md-tabs .nav-item.open .nav-link {
+            color: #005cf7;
+            background-color: #fff;
+            border-radius: .25rem;
+            -webkit-transition: none;
+            border-radius: 0;
+            transition: none;
+            border-bottom: 3px solid #005ffd;
+        }
+        .md-tabs {
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            padding: 0;
+            margin-right: 0;
+            background-color: #ffffff !important;
+            margin-bottom: 0;
+            border-bottom: 0px solid #ececec!important;
+            margin-left: 0;
+            border: inherit;
+            border-radius: 0;
+            -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+            box-shadow: none;
+            display: flex;
+        }
+        @media only screen and (max-width: 600px){
+          .md-tabs {
+            display: none;
+          }
+          #menu-profile {
+            display: none;
+          }
+        }
+    </style>
+</head>
+<body>
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-light lighten-1">
+<!-- /./ -->
+<a class="navbar-brand" href="trang-chu.html">
+<i class="fa fa-arrow-left trolai headmb m-auto" id="seacrh-icon"></i>
+<svg class="d-mobile" height="40" viewBox="0 0 512 512" width="40">
+<path d="m512 256c0 141.386719-114.613281 256-256 256s-256-114.613281-256-256 114.613281-256 256-256 256 114.613281 256 256zm0 0" fill="#4a7aff" />
+<path
+d="m267.234375 511.738281c136.171875-5.878906 244.765625-118.121093 244.765625-255.738281 0-.996094-.027344-1.988281-.039062-2.984375l-177.699219-177.703125-190 198.59375 105.566406 105.566406-48.675781 66.183594zm0 0"
+fill="#0053bf"
+/>
+<path
+d="m334.261719 75.3125v57.96875s-66.554688-9.660156-66.554688 33.277344v42.9375h60.113281l-7.511718 65.480468h-52.601563v170.679688h-66.554687v-170.679688l-56.894532-1.074218v-64.40625h55.820313v-49.378906s-3.683594-73.457032 68.703125-86.949219c30.058594-5.605469 65.480469 2.144531 65.480469 2.144531zm0 0"
+fill="#fff"
+/>
+<path
+d="m334.261719 133.28125v-57.96875s-35.421875-7.75-65.480469-2.144531c-4.695312.875-9.0625 2.007812-13.136719 3.347656v369.140625h12.0625v-170.679688h52.597657l7.515624-65.480468h-60.113281s0 0 0-42.9375 66.554688-33.277344 66.554688-33.277344zm0 0"
+fill="#dce1eb"
+/>
+</svg>
+
+</a>
+<!-- /./ -->
+  <button class="navbar-toggler mobilesearch" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+    aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+  <span><input class="form-control timkiemmb" type="text" placeholder="Tìm kiếm"></span>
+  </button>
+<!-- /./ -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+    <ul class="navbar-nav mr-auto">             
+    <form class="menulog" action="#" method="GET">
+    <li class="nav-item active">
+    <div class="input-group">
+       <div class="input-group-prepend">
+      <span type="submit" class="input-group-text btn-search" id="basic-addon1"><i class="center fa fa-search"></i></span>
+    </div>
+      <input type="text" class="form-control timkiem" name="q" placeholder="Tìm kiếm trên Facebook"></div>
+    </li>
+   </form>
+   </ul>
+  <!-- /./ -->
+   <ul class="navbar-nav ml-auto nav-flex-icons">
+          <style>
+                .tieude-text{
+                  display: block;
+                  font-size: 17px;
+                  margin-top: 4px;
+                }
+                .tieude-text b{
+                  font-weight: bold;
+                }
+          </style>
+         
+        
+              <style>
+                .tieude-text{
+                  display: block;
+                  font-size: 17px;
+                  margin-top: 4px;
+                }
+                .tieude-text b{
+                  font-weight: bold;
+                }
+              </style>
+            </div>
+          </li>
+   </ul>
+  </div>
+</nav>
+<style>
+.chat-body {
+    padding: 8px 15px;
+    background: #ddddddab;
+    color: #000;
+    font-size: 15px;
+    margin-top: 0px;
+    align-self: center;
+    display: block;
+    border-right: 5px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    width: auto;
+}
+.avatar-chat {
+    width: 40px;
+    float: left;
+    margin-top: 0px!important;
+    object-fit: cover;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #d0d0d0;
+}
+.modal {
+    top: 1%;
+}*/
+.mini-chat {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+@media only screen and (min-width:600px){
+    .mini-chat {
+    right:20%;
+    height:450px;
+    width:360px;
+    overflow:auto;
+    }
+}
+@media only screen and (max-width:600px){
+    .mini-chat {
+    height:360px;
+    width:auto;
+    overflow:auto;
+    }
+}
+</style>
+
+
+<div class="modal fade" id="edit-profile" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-top-cennter" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      <h5 style="box-shadow: 0 1px 13px rgb(0, 0, 0);" class="fb-post-title">Chỉnh sửa Trang cá nhân</h5>
+      <b class="close-btn" class="close" data-dismiss="modal"><i class="close-modal"></i></b>
+      </div>
+      
+       <div class="modal-body">
+       <!--/./-->    
+       <div class="row">
+            <div class="col-md-9">
+                <b>Ảnh đại diện</b>
+            </div>
+            <div class="col-md-3">
+                        <form id="update-avatar" action="javascript:void(0)" method="post" enctype="multipart/form-datas">
+              <div class="file-field">
+                <i class="fa fa-camera"><input type="file" name="image-update" id="image-update"></i>
+                <a href="#">Thay đổi</a>
+              </div>
+          </form>
+                      </div>
+      </div>
+      <div class="col-md-12">
+         <div class="text-center">
+           <img class="rounded-circle" id="about-avatar" src="data/4604357344f0d1aaafe1e8cf214cb4fb.html">
+         </div>
+     </div>
+     <!--/./-->
+     <!--/./-->    
+       <div class="row">
+            <div class="col-md-9">
+                <b>Ảnh bìa</b>
+            </div>
+            <div class="col-md-3">
+                        <form id="update-background" action="javascript:void(0)" method="post" enctype="multipart/form-datas">
+              <div class="file-field">
+                <i class="fa fa-camera"><input type="file" name="background-update" id="background-update"></i>
+                <a href="#">Thay đổi</a>
+              </div>
+          </form>
+                      </div>
+      </div>
+      <div class="col-md-12">
+         <div class="text-center">
+           <div class="mt-3">
+               <div id="about-background" style="background-image: linear-gradient(180deg,#f0f2f5 79%,#6f6f6f);"></div>
+           </div> 
+     </div>
+     <!--/./-->
+     </div>
+        
+  </div>
+</div>
+</div>
+</div>
+<style>
+#about-background{
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat, repeat;
+    padding:20px;
+    height:200px;
+    width:100%;
+    border-radius: 15px;
+}
+.rounded-circle {
+    object-fit: cover;
+    width: 140px;
+    height: 140px;
+    border: 50px;
+}
+@media only screen and (min-width:600px){
+    .rounded-circle {
+        border: solid 0px #6f6f6f2e;
+    }
+}
+</style>
+<!-- -->
+<div class="mt-5 py-2 d-block d-sm-none"></div>
+<!-- /./ -->
+<div class="card-on py-5" id="bg-top" style="">
+</div>
+<div class="row d-flex justify-content-center bg-fb">
+<div class="col-md-6">
+<div class="card testimonial-card">
+<style>
+#profilepicdemo {
+    object-fit: cover;
+    width: 100%;
+    height: 164px;
+    border: 0;
+}
+
+@media only screen and (min-width:600px){
+    #profilepicdemo {
+        border: solid 0px #6f6f6f2e;
+    }
+}
+@media only screen and (max-width:600px){
+    .btn.btn-sm {
+        font-size:15px
+    }
+}
+.btn.btn-sm {
+  padding:.45rem 0.95rem;
+
+}
+</style>
+<div class="card-up fb-background" id="background" style="box-shadow: 0 1px px rgb(0, 0, 0);background-image:url(../i.pinimg.com/originals/a5/dd/c0/a5ddc08ab76ae2370421c056f2a5a775.gif)"></div>
+<div class="backgroundpicture">
+<form id="uploadbia" action="#" method="post" enctype="multipart/form-data">
+    <div class="file-field">
+      <div class="themanhbia"><i class="fa fa-camera"></i> <b> Chọn ảnh bìa</b><input name="bg" type="file" id="bg"></div>
+    </div>
+    <!-- /./ -->
+    </form>
+      <div  class="avatar mx-auto white" style="box-shadow: 0 1px 13px rgb(0, 0, 0);">
+    <img  dataa-fancybox="#avt" src="https://phongreviews.com/wp-content/uploads/2022/11/avatar-facebook-mac-dinh-19.jpg" class="rounded-circle" id="profilepicdemo">
+  </div>
+      <form id="uploadimage" action="#" method="post" enctype="multipart/form-datas">
+      <div class="file-field">
+      <span class="choose-avatar" id="choose-avatar">
+        <i class="fa fa-camera"></i>
+      </span>
+      </div>
+  </form>
+  </div>
+  <div class="card-body mb-1">
+     <!--- name user -->
+     <div class="card-body mb-1">
+    <!--- name user -->
+  <h4 class="card-title" style="font-family: 'Calistoga';margin-bottom:5px;font-weight:500!important">
+    CocHyHung <img src="./NRagHFX.gif"
+        width="17" height="17" alt="Tích Xanh"></h4>
+    <div class="row">
+    <div class="col-10 fb-panel d-block d-sm-none">
+    <button type="button" class="btn btn-sm btn-block story waves-effect waves-light"><i class="fa fa-plus-circle mr-2"></i>Thêm vào tin</button>    </div>
+    <div class="col-2 fb-panel d-block d-sm-none">
+            <button type="button" class="btn btn-sm baocao text-dark waves-effect waves-light"><i class="fa fa-ellipsis-h"></i></button>
+    	</div>
+	</div>
+    <!-- /./ -->
+            <tieusu class="tieusu">Share code web</tieusu><br>
+            <span type="button" style="font-size:15px;color:#1b75f2"><b id="btn-status">Cập nhật tiểu sử</b></a>
+    <!-- status -->
+    <span id="edit-status" style="display:none;color:#65676b">
+    <div class="form-group green-border-focus">
+      <label class="">Cập nhật tiểu sử của bạn (tối đa 100 kí tự)</label>
+      <textarea class="form-control form-control-status" id="status" rows="3">https://www.facebook.com/cochyhung.0</textarea>
+    </div>
+        </span>
+    </div>
+    <hr class="d-none d-sm-block">
+    <!-- Nav tabs -->
+    <ul class="nav md-tabs menuprofile">
+        <li class="nav-item waves-effect waves-light">
+          <a class="nav-link active" data-toggle="tab" href="#baiviet">Bài viết</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#gioithieu">Giới thiệu</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" id="btn-banbe" href="#banbe">Bạn bè</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" id="btn-album" href="#album">Ảnh</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Xem thêm <i class="ml-2 fa fa-caret-down"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="send-baocao"><i class="fa fa-ellipsis-h"></i></a><a class="send-baocao"><i class="fa fa-search"></i></a><a class="send-baocao"><i class="fa fa-eye"></i></a><a class="send-baocao" type="button" data-toggle="modal" data-target="#edit-profile"><i class="fa fa-pen mr-2"></i> Chỉnh sửa trang cá nhân</a>        </li>
+        <!-- /./ -->
+                     </ul>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<!-- Tab panes -->
+  <div class="tab-content m-0 p-0">
+  <!-- Bài viết -->
+  <div id="baiviet" class="tab-pane active">
+  <div class="container">
+  <div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+<div class="card mt-2 gioithieuprofile p-0 m-0">
+  <div class="card-body p-2 m-2">
+  <span class="tieudebox">Giới thiệu</span>
+      <div class="boxinfo mb-3">
+      <div class="boximg">
+          <icon class="truonghoc about"></icon>
+          <span>Designer tại
+          <b>cochyhung.com</b>
+          </span>
+      </div>
+  </div>
+     <div class="boxinfo mb-3">
+      <div class="boximg">
+          <icon class="home about"></icon>
+        <span>Sống tại 
+         <b>Gia Nghia</b>
+        </span>
+      </div>
+  </div>
+     <div class="boxinfo mb-3">
+    <div class="boximg">
+        <icon class="tinhtrang about"></icon>
+        <span>Đang hẹn hò với ?</span>
+       </div>
+  </div>
+       <div class="boxinfo">
+      <div class="boximg"><icon class="ngaythamgia about"></icon><span>Tham gia vào tháng 09 năm 2008</div>
+  </div>
+      <div class="boxinfo mt-3">
+      <div class="boximg"><icon class="follow about"></icon><span>Có <b>2,156,763 người</b> theo dõi</span></div>
+  </div>
+     
+</div>
+</div>
+<!-- /./ -->
+<div class="card mt-2 gioithieuprofile p-0 m-0">
+  <div class="card-body p-2 m-2">
+    <span class="font-weight-bold mb-0">Ảnh</span><span type="button" onclick="$('#btn-album').click()" class="d-none d-sm-block float-right mr-3" style="color:hsl(214deg 89% 52%)">Xem tất cả</span>
+    <div class="row mt-1 mb-2">
+        <div class="col-4 mt-1 p-auto">
+        <img class="img-album" src="https://phongreviews.com/wp-content/uploads/2022/11/avatar-facebook-mac-dinh-19.jpg"/>
+    </div> 
+      </div>
+  
+ </div>
+</div>
+<div class="card mt-2 gioithieuprofile p-0 m-0">
+  <div class="card-body p-2 m-2">
+    <span class="font-weight-bold mb-0">Bạn bè</span><span type="button" onclick="$('#btn-banbe').click()" class="d-none d-sm-block float-right mr-3" style="color:hsl(214deg 89% 52%)">Xem tất cả</span>
+    <p class='mt-1 mb-0'><small>Chưa có bạn bè.</small></p>    <div class="row">
+        </div>
+  
+   </div>
+ </div>
+
+</div>
+<div class="col-md-6" id="body-feeder">
+<!-- row -->
+<div class="">
+<div class="">
+    <div class="">
+        <div class="">
+           
+        </div>
+    <div class="col-7 text-left">
+         
+    </div>
+    </div>
+</div>
+</div>
+<style>
+
+.icon-blocked{
+    float:center;
+    margin-top:15px;
+    margin-left:15px;
+ }
+@media screen and (max-width:600px){
+ .icon-blocked{
+    float: right;
+    margin-top: 30px;
+    margin-right: 15px;
+ }
+ .title-blocked{
+    font-weight:700!important
+ }
+}
+</style>
+<!-- -->
+
+<!-- row -->
+<div class="card mb-2">
+  <div class="card-body khungpanel"> 
+    <div class="row">
+        <div class="col-1 fb-panel">
+            <img src="https://phongreviews.com/wp-content/uploads/2022/11/avatar-facebook-mac-dinh-19.jpg" class="rounded float-left">
+        </div>
+    <div class="col-11 fb-panel">
+       <input data-toggle="modal" data-target="#add-post" class="form-control form-control-lg ml-3" style="width:96%" type="text" placeholder="Nguyễn ơi, bạn đang nghĩ gì thế?">
+    </div>
+    </div>
+</div>
+<!-- /./ -->
+<div class="col-md-12 d-none d-sm-block">
+ <center><hr class="m-0 p-0" style="width:95%"></center>
+  <div class="btn-group panelbtn" role="group">
+     <button type="button" class="btn btn-rounded waves-effect"><i class="tructiep" role="img"></i> <b>Video trực tiếp</b></button>
+    <button type="button" class="btn btn-rounded waves-effect dangcamxuc"><i class="upanh" role="img"></i> <b>Ảnh/Video</b></button>
+    <button type="button" class="btn btn-rounded waves-effect"><i class="camxuc" role="img"></i> <b>Cảm xúc/Hoạt động</b></button>
+  </div>
+</div>
+</div>
+<!-- . -->
+<!-- . -->
+<div class="card mb-2">
+    <div class="row pt-1 pl-2 pb-1">
+        <div class="col-2">
+           <div class="m-2 p-0 font-weight-bold">Bài viết</div>
+        </div>
+    <div class="col-10 text-right">
+        <a class="btn btn-sm chinhsua-btn text-dark waves-effect waves-light"><i class="fa fa-stream"></i> Bộ lọc</a>
+        <a class="btn btn-sm chinhsua-btn text-dark waves-effect waves-light"><i class="fa fa-cog"></i> Tùy chọn bài viết</a>
+    </div>
+    </div><!-- row -->
+</div><!-- card -->
+<div id="wrappers" class="scroller-wrappers">
+        <div id="scrollers" class="scroller scroll-verticals">
+            <div class="col-md-12 body-feed" id="load-post"></div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+    <!-- Giới thiệu -->
+    <div id="gioithieu" class="tab-pane">
+       <div class="container">
+        <div class="row d-flex justify-content-center">
+        <div class="col-md-10">
+         <!-- /./ -->
+        <div class="card mt-2 gioithieuprofile p-0 m-0">
+          <div class="card-body p-2 m-1">
+                 <div class="text-center m-4" id="loading_postS">
+            <span class="spinner-border text-success spinner-border-sm m-auto"></span> <small class="ml-2">Đang tải</small>
+        </div>
+        
+        <div class="row">
+            <style>
+             .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+                color: #007fff;
+                background-color: #E7F3FF;
+                font-size: 0.955rem;
+                font-weight: 450!important;
+                border-radius: .45rem;
+                padding: .35rem 0.55rem;
+            }
+            .nav-pills {
+                font-size: 0.955rem;
+                font-weight: 450!important;
+            }
+            .nav-text{
+                margin-bottom: 4px;
+                margin-right:4px;
+                color: #65676b;
+                font-size: 0.955rem;
+                font-weight: 450!important;
+            }
+            .nav-text:hover {
+                color: #65676b;
+                background-color: #65676b26;
+            }
+            </style>
+          <div class="col-4" style="border-right:solid 1px #80808054;">
+            <a class="nav-link">
+               <span class="font-weight-bold">Giới thiệu</span> 
+            </a>
+
+          </div>
+          <div class="col-8">
+            <div class="tab-content mt-0 pt-0" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <div class="row">
+                    <div class="col-10">
+                        <div class="mb-4 mt-2">
+                          <div class="boximg ">
+                              <icon class="truonghoc about"></icon>
+                              <span>Đã làm việc tại Facebook Meta</span>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                        <span class="float-right m-1">
+                          <img class="mt-2 mr-2" src="../static.xx.fbcdn.net/rsrc.php/v3/yI/r/-ejNZQxb3ZR.png" alt="Công khai" height="16" width="16">  
+                        </span>
+                    </div>
+                    <div class="col-1">
+                        <span class="close-btn"><i class="fa fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                                        <div class="row">
+                    <div class="col-10">
+                      <div class="mb-4 mt-2">
+                          <div class="boximg">
+                              <icon class="home about"></icon>
+                            <span>Sống tại 
+                             Thái Bình                            </span>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                        <span class="float-right m-1">
+                          <img class="mt-2 mr-2" src="../static.xx.fbcdn.net/rsrc.php/v3/yI/r/-ejNZQxb3ZR.png" alt="Công khai" height="16" width="16">  
+                        </span>
+                    </div>
+                    <div class="col-1">
+                        <span class="close-btn"><i class="fa fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+                                         <div class="row">
+                    <div class="col-10">
+                     <div class="mb-4 mt-2">
+                    <div class="boximg">
+                        <icon class="tinhtrang about"></icon>
+                        <span>Đang hẹn hò với ?</span>
+                       </div>
+                  </div>
+                    </div>
+                    <div class="col-1">
+                        <span class="float-right m-1">
+                          <img class="mt-2 mr-2" src="../static.xx.fbcdn.net/rsrc.php/v3/yI/r/-ejNZQxb3ZR.png" alt="Công khai" height="16" width="16">  
+                        </span>
+                    </div>
+                    <div class="col-1">
+                        <span class="close-btn"><i class="fa fa-ellipsis-h"></i></span>
+                    </div>
+                </div>
+              
+                         <!-- /./ -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+        </div>
+          </div>
+          
+        </div>
+         
+    </div>
+    </div>
+
+    </div>
+    <!-- end Giới thiệu -->
+    <!-- Ảnh -->
+    <div id="album" class="tab-pane">
+    <div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-10">
+        <!-- /./ -->
+        <div class="card mt-2 gioithieuprofile p-0 m-0">
+          <div class="card-body p-2 m-1">
+            <span class="font-weight-bold mb-0">Ảnh</span>
+            <small>1 hình ảnh.</small>            <div class="row mt-1 mb-2">
+                        
+  
+                      </div>
+
+         </div>
+        </div>
+       <!-- /./ -->
+      </div>
+    </div>   
+    </div>   
+
+    </div>
+    <!-- end Ảnh -->
+    <!-- Bạn Bè -->
+    <div id="banbe" class="tab-pane">
+       <div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-10">
+        <!-- /./ -->
+        <div class="card mt-2 gioithieuprofile p-0 m-0">
+         <div class="card-body p-2 m-1">
+         <span class="font-weight-bold mb-0">Bạn bè</span>
+        <small>Chưa có bạn bè.</small>        <div class="row mt-1 mb-2">
+               <!-- /./ -->
+      </div>
+    </div>   
+    </div>   
+    
+    </div>
+    <!-- end Bạn Bè -->
+    
+</div>
+</div>
+</div>
+<div class="row text-center mt-5">
+<div class="col-md-12">
+    <hr class="mb-2" style="width:10%">
+     <small class="font-size-20">Phiên bản: <code>1.2.0</code></small>
+     <strong style="color: rgb(221, 0, 221); font-size: 16px; font-family: 'Rowdies';"><br>
+      Hoạt động được:&ensp;</strong><span style="color: rgb(218, 0, 0); font-size: 16px; font-family: 'Rowdies';" id="momk"></span><script>
+         function star() {
+           setTimeout(function () {
+           }, 3000);
+       }
+       function show_date_time() {
+           window.setTimeout("show_date_time()", 1000);
+           BirthDay = new Date("2023/04/12");
+           today = new Date();
+           timeold = (today.getTime() - BirthDay.getTime());
+           sectimeold = timeold / 1000
+           secondsold = Math.floor(sectimeold);
+           msPerDay = 24 * 60 * 60 * 1000
+           e_daysold = timeold / msPerDay
+           daysold = Math.floor(e_daysold);
+           e_hrsold = (daysold - e_daysold) * -24;
+           hrsold = Math.floor(e_hrsold);
+           e_minsold = (hrsold - e_hrsold) * -60;
+           minsold = Math.floor((hrsold - e_hrsold) * -60);
+           seconds = Math.floor((minsold - e_minsold) * -60);
+           momk.innerHTML = daysold + " ngày " + hrsold + " giờ " + minsold + " phút " + seconds + " giây";
+       }
+       show_date_time();
+       </script><br>
+     <hr class="mt-2" style="width:20%"><br>
+
+</div>
+</body>
+
+
+</html>
